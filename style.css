@@ -1,0 +1,126 @@
+body {
+    font-family: 'lato', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tabgroup {
+    display: flex;
+}
+
+.tablink {
+    font-size: 28px;
+    flex-basis: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.tablink:hover {
+    background-color: #e4eaed;
+}
+
+h2 {
+    font-size: 26px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+h2 small {
+    font-size: 0.5em;
+}
+
+.table-header {
+    padding: 15px 15px;
+}
+
+.table-header .col {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.table-row {
+    padding: 5px 15px;
+}
+
+.responsive-table li {
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.responsive-table .table-header {
+    background-color: #aed1c5;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.responsive-table .table-row {
+    /*    padding: 5px auto 5px auto;*/
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgb(85 176 209 / 20%);
+}
+
+.responsive-table .table-row:hover {
+    background-color: #aed1c563;
+}
+
+.responsive-table .col-1 {
+    flex-basis: 15%;
+    /*display: flex;
+    align-items: center;*/
+}
+
+.responsive-table .col-2 {
+    flex-basis: 40%;
+}
+
+.responsive-table .col-3 {
+    flex-basis: 45%;
+}
+
+.responsive-table .col-4 {
+    flex-basis: 25%;
+}
+
+.function_name {
+    background-color: #2E74B5;
+    color: white;
+    padding: 0.1rem;
+}
+
+@media all and (max-width: 767px) {
+    .responsive-table .table-header {
+        display: none;
+    }
+
+    .responsive-table li {
+        display: block;
+    }
+
+    .responsive-table .col {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .responsive-table .col {
+        display: flex;
+        padding: 10px 0;
+    }
+
+    .responsive-table .col:before {
+        color: #6C7A89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: center;
+    }
+}
