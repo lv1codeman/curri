@@ -13,12 +13,12 @@
 <body>
     <div class="container">
         <div class="tabgroup">
-            <button class="tablink" onclick="selectTab('Day')">
+            <button id="AA" class="tablink" onclick="selectTab('Day', 'AA')">
                 <b>
                     <div>教務處</div>
                 </b>
             </button>
-            <button class="tablink" onclick="selectTab('Night')">
+            <button id="EE" class="tablink" onclick="selectTab('Night', 'EE')">
                 <b>進修學院<br>
                     <div>(進修學院學生請點此)</div>
                 </b>
@@ -28,59 +28,62 @@
                 </b>
             </button>
         </div>
-        <div id="Day" class="tabcontent" style="display: block;">
-            <h2>112 學年度第 1 學期選課階段與時間</h2>
-            <ul class="responsive-table">
-                <li class="table-header">
-                    <div class="col col-1">選課階段</div>
-                    <div class="col col-2">時間</div>
-                    <div class="col col-3">備註</div>
-                </li>
-                <li class="table-row">
-                    <div class="col col-1" data-label="選課階段">第一階段<br />網路預選</div>
-                    <div class="col col-2" data-label="時間">
-                        舊生<br>
-                        112/6/19(15:00)起~112/8/4(15:00)止<br>
-                        新生
-                        <font size="2">(含當學期轉入之轉學生及提早入學生)</font><br>
-                        112/8/21(15:00)起~112/8/28(15:00)止
-                    </div>
-                    <div class="col col-3" data-label="備註">
-                        1. 採先登記後篩選制度(無關登記順序)<br>
-                        2. 選課優先順序請詳閱 選課流程暨須知<br>
-                        3. 公告預選篩選結果<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;舊生：112年8月9日<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;新生：112年8月30日
-                    </div>
-                </li>
-                <li class="table-row">
-                    <div class="col col-1" data-label="選課階段">第二階段<br />網路加退選</div>
-                    <div class="col col-2" data-label="時間">
-                        112/8/31(15:00)起~112/9/22(23:59)止<br />
-                        112/9/11(8:00)~9/22(23:59)開放線上加簽
-                    </div>
-                    <div class="col col-3" data-label="備註">1. 即選即上<br />
-                        2. 自開學第一週起，可透過<span class="function_name">SC030加簽登記作業</span>申請加簽<br />
-                        3. 通識師培課程開學第一、二週僅能使用<span class="function_name">SC030加簽登記作業</span>申請加簽
-                    </div>
-                </li>
-                <li class="table-row">
-                    <div class="col col-1" data-label="選課階段">人工選課更正</div>
-                    <div class="col col-2" data-label="時間">112/9/23起~112/9/28(17:00)止</div>
-                    <div class="col col-3" data-label="備註">
-                        1. 請填寫「 <a href="http://acadaff.ncue.edu.tw/ezfiles/21/1021/img/810/modify20190304.doc">選課更正暨繳費申請表</a> 」<br />
-                        2. 需手續費(200元/科)</div>
-                </li>
-                <li class="table-row">
-                    <div class="col col-1" data-label="選課階段">期中停修</div>
-                    <div class="col col-2" data-label="時間">112/11/13起~112/12/8(17:00)止</div>
-                    <div class="col col-3" data-label="備註">
-                        兩科為限，可登入教務系統申請線上停修</div>
-                </li>
-            </ul>
-        </div>
-        <div id="Night" class="tabcontent" style="display: none; ">
-            Night here.
+        <div class="tabbackground">
+            <div id="Day" class="tabcontent" style="display: block;">
+                <h2>112 學年度第 1 學期選課階段與時間</h2>
+                <ul class="responsive-table">
+                    <li class="table-header">
+                        <div class="col col-1">選課階段</div>
+                        <div class="col col-2">時間</div>
+                        <div class="col col-3">備註</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="選課階段">第一階段<br />網路預選</div>
+                        <div class="col col-2" data-label="時間">
+                            舊生<br>
+                            112/6/19(15:00)起~112/8/4(15:00)止<br>
+                            新生
+                            <font size="2">(含當學期轉入之轉學生及提早入學生)</font><br>
+                            112/8/21(15:00)起~112/8/28(15:00)止
+                        </div>
+                        <div class="col col-3" data-label="備註">
+                            1. 採先登記後篩選制度(無關登記順序)<br>
+                            2. 選課優先順序請詳閱 選課流程暨須知<br>
+                            3. 公告預選篩選結果<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;舊生：112年8月9日<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;新生：112年8月30日
+                        </div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="選課階段">第二階段<br />網路加退選</div>
+                        <div class="col col-2" data-label="時間">
+                            112/8/31(15:00)起~112/9/22(23:59)止<br />
+                            112/9/11(8:00)~9/22(23:59)開放線上加簽
+                        </div>
+                        <div class="col col-3" data-label="備註">1. 即選即上<br />
+                            2. 自開學第一週起，可透過<span class="function_name">SC030加簽登記作業</span>申請加簽<br />
+                            3. 通識師培課程開學第一、二週僅能使用<span class="function_name">SC030加簽登記作業</span>申請加簽
+                        </div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="選課階段">人工選課更正</div>
+                        <div class="col col-2" data-label="時間">112/9/23起~112/9/28(17:00)止</div>
+                        <div class="col col-3" data-label="備註">
+                            1. 請填寫「 <a href="http://acadaff.ncue.edu.tw/ezfiles/21/1021/img/810/modify20190304.doc">選課更正暨繳費申請表</a> 」<br />
+                            2. 需手續費(200元/科)</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="選課階段">期中停修</div>
+                        <div class="col col-2" data-label="時間">112/11/13起~112/12/8(17:00)止</div>
+                        <div class="col col-3" data-label="備註">
+                            兩科為限，可登入教務系統申請線上停修</div>
+                    </li>
+                </ul>
+            </div>
+            <div id="Night" class="tabcontent" style="display: none; ">
+                <h2>進修學院112學年度暑期班選課日程表(碩士在職專班)</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores adipisci aliquid minus tempore dolor quos, molestias in saepe veritatis, officiis odio qui mollitia, suscipit iure ullam nobis totam ea, libero excepturi. Hic aut, a, inventore quod ex quo ducimus esse provident quas eos vel repellat nobis, architecto! Provident quos expedita at culpa minima fugit, adipisci similique ullam nisi ratione. Provident eaque magnam facilis tempore obcaecati voluptate voluptates libero? Porro quidem error eaque numquam vitae at quibusdam praesentium quod aut dolores, maiores perferendis et ratione vero repellendus esse dignissimos sequi placeat exercitationem tenetur commodi illo odit. Impedit perspiciatis dolore corrupti enim tenetur, veritatis earum, a harum molestiae unde. Quam aspernatur distinctio quae sit nostrum perspiciatis, assumenda dolor repellendus, repellat, sapiente cumque officia minus at ipsam numquam quos modi commodi est. Nesciunt alias quibusdam velit impedit obcaecati mollitia ipsum vero dolore corporis est iure id saepe, animi beatae, quaerat soluta non? Corrupti, ipsam veritatis, nobis dolores fuga voluptate aspernatur consectetur vero suscipit alias autem rerum animi temporibus, nemo, quaerat tempora quos sint blanditiis. Doloremque, reiciendis. Nulla in totam ipsum, similique reiciendis consequatur libero adipisci nisi, obcaecati suscipit accusantium voluptatem distinctio officia, quis voluptates, sunt debitis. Quis necessitatibus tenetur id facere, similique, quae sequi laborum reiciendis molestias quos, quibusdam! Numquam eveniet molestiae, perspiciatis adipisci eum et aperiam architecto aliquid voluptatum veniam omnis corrupti asperiores repellendus delectus ducimus non, rerum error magnam commodi minima libero ex obcaecati. Quaerat eveniet quia molestiae cumque saepe fugiat veritatis tenetur quibusdam aliquam. Corrupti doloribus sed maxime velit sequi ex corporis commodi provident labore dolore necessitatibus numquam alias est, saepe harum dolores modi eveniet, architecto laborum obcaecati vitae, sunt. Eligendi expedita eius, nulla nostrum deleniti nobis reiciendis, harum dolores asperiores architecto maiores, commodi cum odit amet labore ipsa, necessitatibus quasi nemo? Eum quis facere rerum iste suscipit corrupti? Magni atque tenetur minima nesciunt laborum dolores eligendi distinctio. Minus, nulla cum? Voluptatum voluptatibus cumque reiciendis? Assumenda harum inventore iusto odit? Eaque nemo, assumenda, inventore corporis in magnam architecto sunt sed repellendus autem sapiente quibusdam? Animi corrupti tempora, deserunt, ratione inventore quia, enim nulla doloremque aut fuga dignissimos accusamus ut praesentium exercitationem temporibus aliquid delectus maxime omnis necessitatibus non. Cumque ab nostrum minus ea, magnam voluptate dolorem dignissimos assumenda libero necessitatibus praesentium enim modi ipsum maxime velit voluptates ex adipisci vel omnis culpa veniam numquam porro! Expedita optio totam beatae porro veritatis sunt, soluta molestias quis iusto nihil enim neque recusandae ea autem, non fugiat maxime asperiores! Laborum dignissimos iste deleniti qui exercitationem iusto et ea ex alias maiores, voluptate quis hic asperiores suscipit tenetur dolorum eveniet, quaerat aliquid animi harum. Labore, laboriosam. Delectus at dolorem accusantium asperiores eligendi saepe cumque nisi est cum suscipit labore magni fuga ut libero, sunt quis consequatur odit rem. Magnam eaque facere voluptate recusandae consectetur eos totam architecto quaerat iste natus in facilis neque alias fugiat modi delectus velit tenetur a ab dignissimos tempore incidunt, corporis reiciendis. Id, dicta, mollitia odit dolores molestias quo blanditiis ex voluptates dolorem ipsam minus dolorum molestiae odio quisquam temporibus.
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -89,11 +92,17 @@
 
     });
 
-    function selectTab(id) {
+    function selectTab(contentID, tabID) {
         $(".tabcontent").each(function() {
             $(this).hide();
         });
-        $("#" + id).show();
+
+        $("#" + contentID).show();
+
+        $(".tablink").each(function() {
+            $(this).css('border-bottom', '1px solid black');
+        });
+        $("#" + tabID).css('border-bottom', 'none');
     };
     </script>
 </body>
