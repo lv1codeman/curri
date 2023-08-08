@@ -19,8 +19,9 @@
                 </b>
             </button>
             <button id="EE" class="tablink" onclick="selectTab('Night', 'EE')">
-                <b>進修學院<br>
-                    <div>(進修學院學生請點此)</div>
+                <b>進修學院
+                    <!-- <br>
+<div class="tabsub">(進修學院學生請點此)</div> -->
                 </b>
             </button>
             <button class="tablink" onclick="alert('go ncue.');">
@@ -100,7 +101,7 @@
         $("#" + contentID).show();
 
         $(".tablink").each(function() {
-            $(this).css('border-bottom', '1px solid black');
+            $(this).css('border-bottom', 'var(--border-style)');
         });
         $("#" + tabID).css('border-bottom', 'none');
     };

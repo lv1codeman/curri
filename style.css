@@ -1,8 +1,14 @@
+:root {
+    --border-style: 2px solid var(--bs-gray-400);
+    --border-radius-unit: 10px;
+}
+
 body {
     font-family: 'lato', sans-serif;
 }
 
 .container {
+    margin-top: 10px;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -11,9 +17,10 @@ body {
 }
 
 .tabbackground {
-    border: 1px solid black;
+    border: var(--border-style);
     border-top: none;
     background-color: azure;
+    border-radius: 0 0 var(--border-radius-unit) var(--border-radius-unit);
 }
 
 .tabgroup {
@@ -24,16 +31,30 @@ body {
     font-size: 28px;
     flex-basis: 100%;
     text-align: center;
-    border: 1px solid black;
+    /*    border: 1px solid black;*/
+    border: var(--border-style);
+    border-right: none;
     background-color: azure;
+    border-radius: var(--border-radius-unit) var(--border-radius-unit) 0 0;
+    padding: 15px 0;
+}
+
+.tablink:last-child {
+    border-right: var(--border-style);
 }
 
 .tablink:hover {
     background-color: #e4eaed;
 }
 
+/*.tabsub {
+    font-size: 18px;
+    color: var(--bs-red);
+}*/
+
 h2 {
     font-size: 26px;
+    font-weight: 600;
     padding-top: 20px;
     text-align: center;
 }
@@ -59,7 +80,7 @@ h2 small {
 }
 
 .responsive-table li {
-    border-radius: 3px;
+    border-radius: var(--border-radius-unit);
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
