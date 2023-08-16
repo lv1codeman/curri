@@ -1,0 +1,710 @@
+/*點點圓可愛風itemBx*/
+.itemBx {
+    max-width: 1200px;
+    display: grid;
+    /*這裡自訂一列要多少item*/
+    /*grid-template-columns: repeat(4, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-items: center;
+    align-items: top;
+    gap: 40px 10px;
+    margin: auto;
+}
+
+.itemBx a {
+    color: var(--main-color);
+}
+
+.itemBx .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: .5rem;
+    transition: .5s;
+}
+
+.itemBx .item:hover {
+    transform: scale(1.1);
+}
+
+.itemBx .pic {
+    width: 130px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--secondary-color-2);
+    color: var(--main-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    position: relative;
+    padding: 25px;
+    transition: .5s;
+}
+
+.itemBx .pic:hover {
+    background-color: transparent;
+}
+
+.itemBx .text h2 {
+    letter-spacing: .4rem;
+    padding-bottom: 10px;
+}
+
+.itemBx .text p {
+    font-size: 1.1rem;
+}
+
+.itemBx.dotcircle .pic {
+    width: 150px;
+    background-color: transparent;
+    border: 4px dotted #FFF;
+    position: relative;
+}
+
+.itemBx.dotcircle .pic h1 {
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.itemBx.dotcircle .pic:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    /*background: url(var(--bgd)) no-repeat;*/
+
+    background: url("school_2.png") no-repeat;
+    background-size: contain;
+}
+
+.itemBx.dotcircle .item:nth-child(2) .pic:before {
+    background: url("scholarship.png") no-repeat;
+    background-size: contain;
+}
+
+.itemBx.dotcircle .item:nth-child(3) .pic:before {
+    background: url("growth_2.png") no-repeat;
+    background-size: contain;
+}
+
+.icon_layout {
+    background-color: var(--main-color);
+    color: #FFF;
+}
+
+/*three_block_layout*/
+.three_block_layout .grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+    gap: 1rem;
+}
+
+.three_block_layout .item {
+    background-color: var(--secondary-color-2);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 1.4rem;
+    transition: .5s;
+    position: relative;
+}
+
+.three_block_layout .item.click {
+    cursor: pointer;
+}
+
+.three_block_layout .item.click:hover {
+    background-color: var(--main-color);
+}
+
+.three_block_layout .item.click:hover {
+    color: #FFF;
+}
+
+.three_block_layout .item.click:hover img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(351deg) brightness(99%) contrast(106%);
+}
+
+/*左側長方塊*/
+.three_block_layout .item:first-child {
+    grid-row: span 2;
+    grid-column: span 1;
+    min-height: 100px;
+}
+
+/*左側小方塊*/
+.three_block_layout .item:nth-child(2) {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+/*左側小方塊*/
+.three_block_layout .item:nth-child(3) {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+/*右側條列文字說明區塊*/
+.three_block_layout .item:last-child {
+    grid-row: span 2;
+    grid-column: span 3;
+    text-align: left;
+    background-color: transparent;
+    line-height: 1.8;
+}
+
+.three_block_layout ol li {
+    border-bottom: 1px #4d3f2e dotted;
+    margin-left: 1em;
+    list-style-type: decimal;
+    /*文字左右對齊*/
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+.three_block_layout .item img {
+    width: 100px;
+}
+
+.three_block_layout .item:first-child:before {
+    content: '';
+    position: absolute;
+    background: url("calendar.png") no-repeat;
+    background-size: 200px;
+    inset: 20px;
+
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(3deg) brightness(106%) contrast(103%);
+    background-position: left bottom;
+}
+
+.three_block_layout .item .content {
+    position: relative;
+    font-size: 1.3rem;
+
+}
+
+/*cardBx*/
+.container {
+    /*padding-inline: 1rem;*/
+    margin-inline: auto;
+}
+
+.cardBx {
+    display: grid;
+    /*這裡自訂一列要多少card*/
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+}
+
+.cardBx .card {
+    aspect-ratio: 1 / 1.1;
+    transition: .5s;
+}
+
+.cardBx .card:hover {
+    transform: scale(1.05);
+}
+
+.cardBx .card .card_img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.cardBx .stacked {
+    display: grid;
+}
+
+.cardBx .stacked>* {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.cardBx .card .card_content {
+    background-color: #FFF;
+    align-self: end;
+    margin: .5rem;
+    padding: .5rem;
+    box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
+    opacity: .9;
+    text-align: center;
+    letter-spacing: .4rem;
+}
+
+.cardBx.iconcard .stacked {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardBx.iconcard .card {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    aspect-ratio: 1 / .55;
+    color: #FFF;
+    padding: 20px;
+}
+
+.cardBx.iconcard .card:hover {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.cardBx.iconcard .card:hover .card_img {
+    display: none;
+}
+
+.cardBx.iconcard .card:hover .hover_show {
+    display: block;
+}
+
+.cardBx.iconcard .card .card_img {
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(351deg) brightness(99%) contrast(106%);
+}
+
+.cardBx.iconcard .card .card_content {
+    background-color: transparent;
+    box-shadow: none;
+    opacity: 1;
+    margin: 0;
+    align-self: center;
+}
+
+.cardBx.iconcard .card .hover_show {
+    display: none;
+    text-align: center;
+    font-weight: 100;
+}
+
+.cardBx.dashboard {
+    grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
+    position: relative;
+}
+
+.cardBx.dashboard .card {
+    grid-column: span 2;
+    aspect-ratio: 1 / .8;
+    max-height: 85vh;
+    background-color: #FFF;
+    color: var(--main-color);
+    position: relative;
+}
+
+.cardBx.dashboard .card:hover {
+    background-color: #FFF;
+    border: 1px solid var(--main-color);
+    transform: scale(1);
+}
+
+.cardBx.dashboard .card:hover .card_content>span {
+    display: block;
+}
+
+.cardBx.dashboard .card_content {
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: .8rem;
+}
+
+.cardBx.dashboard .card_content h1 {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.cardBx.dashboard .card_content>span {
+    font-size: 3rem;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.cardBx.dashboard .card_content>span:before {
+    content: '';
+    border-bottom: 3px solid var(--secondary-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+}
+
+.cardBx.dashboard .card_content>span:after {
+    content: '';
+    border-bottom: 3px solid var(--secondary-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-20px) rotate(-45deg);
+}
+
+.cardBx.dashboard .card_content>span:hover:after,
+.cardBx.dashboard .card_content>span:hover:before {
+    border-bottom: 3px solid red;
+}
+
+[draggable="true"] {
+    user-select: none;
+    cursor: grab;
+}
+
+[draggable="true"]:active {
+    cursor: grabbing;
+}
+
+.dragging {
+    border: 3px dashed var(--main-color);
+    border-radius: 10px;
+    background-color: var(--secondary-color-2) !important;
+}
+
+.breadCrumbs * {
+    display: inline;
+}
+
+.breadCrumbs {
+    display: flex;
+    margin: auto;
+    color: #D0CECE;
+}
+
+.breadCrumbs h2.active {
+    color: var(--main-color);
+}
+
+/*flowBx*/
+.flowBx {
+    display: grid;
+    /*這裡自訂一列要多少card*/
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+    counter-reset: num;
+    grid-auto-rows: 1fr;
+}
+
+.flowBx .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color-2);
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+}
+
+.flowBx .item:before {
+    content: '';
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: -10px;
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: var(--secondary-color-2);
+    transform: rotate(45deg);
+}
+
+.flowBx .item:last-child:before {
+    display: none;
+}
+
+.flowBx .item:not(:first-child):after {
+    content: '0'counter(num)' ';
+    counter-increment: num;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.flowBx .item .text {
+    position: relative;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: .3rem;
+}
+
+.flowBx.vertical {
+    grid-auto-rows: auto;
+    /*這裡自訂一列要多少card*/
+    grid-template-columns: 1fr;
+    gap: .8rem;
+}
+
+.flowBx.vertical .item:before {
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: -5px;
+}
+
+.formBx input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin: 8px 0;
+    letter-spacing: 1px;
+    transition: .5s;
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+    color: #333;
+    background-color: var(--bgd-color);
+}
+
+.formBx input[type="button"]:hover {
+    background-color: var(--main-color);
+    color: #FFF;
+    cursor: pointer;
+}
+
+.formBx select {
+    font-size: 1.1rem;
+}
+
+/*----------------------RWD表格Start---------------------------*/
+.rwd-table {
+    /*width: fit-content; div寬度根據內容自適應*/
+    width: auto;
+    display: inline-block;
+    border-bottom: 3px solid var(--main-color);
+    margin: 0;
+}
+
+.rwd-table ol {
+    word-wrap: break-word;
+    padding-right: 1.8em;
+    text-align: justify;
+    /* 文字左右對齊　*/
+    text-justify: auto;
+    /*　IE再加上此行　*/
+}
+
+.tbody {
+    display: table-row-group;
+}
+
+.thead {
+    display: table-header-group;
+}
+
+.thead li,
+.tr li {
+    display: table-cell;
+    padding: 15px;
+    border-bottom: 5px solid #FFF;
+}
+
+.thead li {
+    padding-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 4px solid var(--main-color);
+}
+
+.tr {
+    display: table-row;
+}
+
+.tr li {
+    width: auto;
+    vertical-align: middle;
+}
+
+.tbody .tr li {
+    background-color: var(--secondary-color-2);
+}
+
+.tbody .tr li:hover {
+    background-color: #FFFCCC;
+}
+
+.tbody .tr li:first-child {
+    background-color: var(--main-color);
+    color: #FFF;
+}
+
+.tr li:first-child span {
+    color: #FFF;
+}
+
+/*----------------------RWD表格End---------------------------*/
+
+@media (min-width: 40em) {
+    .cardBx .card.featured {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .cardBx.dashboard .card.fivespan {
+        grid-column: span 5;
+        grid-row: span 2;
+        aspect-ratio: 1 / .65;
+    }
+
+    .cardBx.dashboard .card.fourspan {
+        grid-column: span 4;
+        grid-row: span 2;
+    }
+
+    .cardBx.dashboard .card.threespan {
+        grid-column: span 3;
+        grid-row: span 2;
+        aspect-ratio: 1 / 1.1;
+    }
+}
+
+/* 手機板介面 */
+@media screen and (max-width: 768px) {
+
+    .three_block_layout .grid {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+
+    .three_block_layout .item:first-child {
+        grid-row-start: 1;
+        grid-column: span 2;
+    }
+
+    .three_block_layout .item:last-child {
+        grid-row: span 3;
+        grid-column: span 2;
+    }
+
+    .three_block_layout .item:nth-child(2) {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+
+    .flowBx {
+        grid-auto-rows: auto;
+        grid-template-columns: 1fr;
+        gap: .8rem;
+    }
+
+    .flowBx .item:before {
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: -5px;
+    }
+
+    .breadCrumbs {
+        display: flex;
+        flex-direction: column;
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    .cardBx.dashboard {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+
+    .cardBx.dashboard .card {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .cardBx.dashboard .card {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .cardBx.dashboard .card.fivespan,
+    .cardBx.dashboard .card.fourspan,
+    .cardBx.dashboard .card.threespan {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    /*----------------------RWD表格Start---------------------------*/
+
+    .rwd-table {
+        width: 95vw;
+        display: block;
+        border-collapse: collapse;
+        border-bottom: none;
+    }
+
+    .thead {
+        display: none;
+    }
+
+    .tr {
+        display: block;
+        border: 2px dotted var(--main-color);
+        margin-bottom: 5px;
+    }
+
+    .tr li {
+        display: inline-block;
+        width: 100%;
+        border: none;
+        padding: .2em;
+        margin-left: 1em;
+    }
+
+    .tbody .tr li,
+    .tbody .tr li:first-child {
+        background-color: transparent;
+    }
+
+    .tr li:first-child span {
+        color: var(--main-color);
+        border-bottom: 2px dashed var(--main-color);
+    }
+
+    .tr li:before {
+        content: attr(data-title);
+        display: block;
+        width: auto;
+        min-width: 20vw;
+        font-weight: 900;
+        padding-right: 1em;
+    }
+
+    .rwd-table ol {
+        text-align: left;
+    }
+
+    .rwd-table ol:nth-child(even) {
+        background-color: var(--secondary-color-2);
+    }
+
+    /*----------------------RWD表格End---------------------------*/
+}
