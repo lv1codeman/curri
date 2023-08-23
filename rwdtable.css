@@ -130,6 +130,10 @@ ul {
     .tbody .tr li:first-child {
         width: auto;
         font-size: 1.2em;
+        color: #fff;
+        border: 1px solid var(--bgd-color);
+        background-color: var(--main-color);
+        border-radius: var(--border-radius-unit) var(--border-radius-unit) var(--border-radius-unit) var(--border-radius-unit);
         /*        原本有設定7em的寬度讓此欄顯示5個字*/
     }
 
@@ -144,7 +148,7 @@ ul {
         content: attr(data-title);
         display: block;
         width: auto;
-        min-width: 20vw;
+        /*        min-width: 20vw;*/
         font-weight: 900;
         font-size: 1.1em;
         padding-right: 1em;
