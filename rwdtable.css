@@ -84,10 +84,10 @@ ul {
 }
 
 .tbody .tr li:first-child {
-    background-color: var(--main-color);
-    color: black;
+    background-color: #078E8E;
+    color: white;
     text-align: center;
-    font-size: 1.05em;
+    font-size: 1.2em;
     font-weight: 600;
     width: 7em;
 }
