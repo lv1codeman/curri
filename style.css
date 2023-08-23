@@ -37,6 +37,16 @@ body {
     font-family: 'lato', sans-serif;
 }
 
+br.responsive {
+    display: inline;
+}
+
+@media screen and (max-width: 768px) {
+    br.responsive {
+        display: none;
+    }
+}
+
 .container {
     margin-top: 10px;
     max-width: 1000px;
@@ -58,7 +68,7 @@ body {
 }
 
 .tablink {
-    font-size: 28px;
+    font-size: 1.6rem;
     flex-basis: 100%;
     text-align: center;
     border: var(--border-style);

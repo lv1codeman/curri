@@ -1,6 +1,24 @@
 ul {
     padding-right: 2rem;
-    /*    抵銷reboot.scss預設的padding-right: 2rem;*/
+    /*    抵銷reboot.scss預設的padding-left: 2rem;*/
+}
+
+.texthigh_lv1 {
+    font-weight: 800;
+    font-size: 1.05rem;
+}
+
+.textlow_lv1 {
+    font-size: .9rem;
+}
+
+.textlow_lv2 {
+    font-size: .8rem;
+}
+
+.pre_selection_hint {
+    font-weight: 800;
+    font-size: .95rem;
 }
 
 .rwd-table {
@@ -20,9 +38,12 @@ ul {
     /*　IE再加上此行　*/
 }
 
+/*table header CSS*/
 .rwd-table .thead .tr li h3 {
-    font-weight: 900;
-    font-size: 1.5rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-align: center;
+    /*    border-bottom: 1px solid black;*/
 }
 
 .tbody {
@@ -37,12 +58,11 @@ ul {
 .tr li {
     display: table-cell;
     padding: 15px;
-    /*    border-bottom: 5px solid #FFF;*/
+    border-bottom: 2px solid #FFF;
 }
 
 .thead li {
-    padding-bottom: 2px;
-    font-weight: bold;
+    padding-bottom: 0px;
     /*    border-bottom: 4px solid var(--main-color);*/
 }
 
@@ -67,8 +87,9 @@ ul {
     background-color: var(--main-color);
     color: black;
     text-align: center;
-    font-size: 1.1em;
-    /*    width: 110px;*/
+    font-size: 1.05em;
+    font-weight: 600;
+    width: 7em;
 }
 
 
@@ -103,20 +124,29 @@ ul {
     .tbody .tr li:first-child {
         background-color: transparent;
         text-align: left;
+        /*        原本有設定文字置中，現在要靠左*/
     }
 
-    .tr li:first-child span {
-        font-size: 1.5em;
+    .tbody .tr li:first-child {
+        width: auto;
+        font-size: 1.2em;
+        /*        原本有設定7em的寬度讓此欄顯示5個字*/
+    }
+
+    .tr li:first-child {
         color: var(--main-color);
+        padding-bottom: 0;
         border-bottom: 2px solid var(--main-color);
     }
 
+    /*時間、說明*/
     .tr li:before {
         content: attr(data-title);
         display: block;
         width: auto;
         min-width: 20vw;
         font-weight: 900;
+        font-size: 1.1em;
         padding-right: 1em;
     }
 
