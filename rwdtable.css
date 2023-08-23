@@ -96,7 +96,7 @@ ul {
 
 @media screen and (max-width: 768px) {
     .rwd-table {
-        width: 95vw;
+        /*        width: 95vw;*/
         display: block;
         border-collapse: collapse;
         border-bottom: none;
@@ -116,8 +116,12 @@ ul {
         display: inline-block;
         width: 100%;
         border: none;
-        padding: .2em;
-        margin-left: 1em;
+        padding: .2rem;
+        border-bottom: 2px dotted var(--main-color);
+    }
+
+    .tr li:last-child {
+        border-bottom: none;
     }
 
     .tbody .tr li,
@@ -129,18 +133,20 @@ ul {
 
     .tbody .tr li:first-child {
         width: auto;
-        font-size: 1.2em;
+        font-size: 1.2rem;
         color: #fff;
         border: 1px solid var(--bgd-color);
-        background-color: var(--main-color);
+        background-color: #078e8e;
         border-radius: var(--border-radius-unit) var(--border-radius-unit) var(--border-radius-unit) var(--border-radius-unit);
         /*        原本有設定7em的寬度讓此欄顯示5個字*/
+        padding: 0.5rem 1rem;
     }
 
     .tr li:first-child {
         color: var(--main-color);
         padding-bottom: 0;
         border-bottom: 2px solid var(--main-color);
+        margin-top: 0.2rem;
     }
 
     /*時間、說明*/
@@ -150,9 +156,24 @@ ul {
         width: auto;
         /*        min-width: 20vw;*/
         font-weight: 900;
-        font-size: 1.1em;
-        padding-right: 1em;
+        font-size: 1.1rem;
     }
+
+    /*    .tr li:before {
+        width: 2em;
+        border-bottom: 1px solid black;
+    }
+
+    .tr li:first-child:before {
+        border-bottom: none;
+    }
+
+
+    .tr li:last-child {
+        border-bottom: none;
+    }*/
+
+
 
     .rwd-table ol {
         text-align: left;
