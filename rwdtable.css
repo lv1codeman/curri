@@ -1,0 +1,132 @@
+ul {
+    padding-right: 2rem;
+    /*    抵銷reboot.scss預設的padding-right: 2rem;*/
+}
+
+.rwd-table {
+    /*width: fit-content; div寬度根據內容自適應*/
+    width: auto;
+    display: inline-block;
+    /*    border-bottom: 3px solid var(--main-color);*/
+    margin: 0;
+}
+
+.rwd-table ol {
+    word-wrap: break-word;
+    padding-right: 1.8em;
+    text-align: justify;
+    /* 文字左右對齊　*/
+    text-justify: auto;
+    /*　IE再加上此行　*/
+}
+
+.rwd-table .thead .tr li h3 {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.tbody {
+    display: table-row-group;
+}
+
+.thead {
+    display: table-header-group;
+}
+
+.thead li,
+.tr li {
+    display: table-cell;
+    padding: 15px;
+    /*    border-bottom: 5px solid #FFF;*/
+}
+
+.thead li {
+    padding-bottom: 2px;
+    font-weight: bold;
+    /*    border-bottom: 4px solid var(--main-color);*/
+}
+
+.tr {
+    display: table-row;
+}
+
+.tr li {
+    width: auto;
+    vertical-align: middle;
+}
+
+.tbody .tr li {
+    background-color: var(--secondary-color-2);
+}
+
+.tbody .tr li:hover {
+    background-color: #FFFCCC;
+}
+
+.tbody .tr li:first-child {
+    background-color: var(--main-color);
+    color: black;
+    text-align: center;
+    font-size: 1.1em;
+    /*    width: 110px;*/
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .rwd-table {
+        width: 95vw;
+        display: block;
+        border-collapse: collapse;
+        border-bottom: none;
+    }
+
+    .thead {
+        display: none;
+    }
+
+    .tr {
+        display: block;
+        border: 2px dotted var(--main-color);
+        margin-bottom: 5px;
+    }
+
+    .tr li {
+        display: inline-block;
+        width: 100%;
+        border: none;
+        padding: .2em;
+        margin-left: 1em;
+    }
+
+    .tbody .tr li,
+    .tbody .tr li:first-child {
+        background-color: transparent;
+        text-align: left;
+    }
+
+    .tr li:first-child span {
+        font-size: 1.5em;
+        color: var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+    }
+
+    .tr li:before {
+        content: attr(data-title);
+        display: block;
+        width: auto;
+        min-width: 20vw;
+        font-weight: 900;
+        padding-right: 1em;
+    }
+
+    .rwd-table ol {
+        text-align: left;
+    }
+
+    .rwd-table ol:nth-child(even) {
+        background-color: var(--secondary-color-2);
+    }
+
+    /*----------------------RWD表格End---------------------------*/
+}
