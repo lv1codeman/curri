@@ -62,8 +62,9 @@ ul {
 .tr li {
     display: table-cell;
     padding: 1rem;
-    border-bottom: 2px solid #FFF;
+    border-bottom: 0.3rem solid #FFF;
 }
+
 
 .thead li {
     padding-bottom: 0px;
@@ -86,8 +87,8 @@ ul {
 
 .tbody .tr li {
     background-color: var(--secondary-color-2);
-    border: 2px solid #1CAB9B;
-    border-style: solid none solid none;
+    /*    border: 2px solid #1CAB9B;
+    border-style: solid none solid none;*/
 }
 
 .tbody .tr li:hover {
@@ -101,15 +102,15 @@ ul {
     font-size: 1.2em;
     font-weight: 600;
     width: 7em;
-    border: 2px solid #1CAB9B;
-    border-style: solid none solid solid;
-    border-radius: var(--border-radius-unit) 0 0 var(--border-radius-unit);
+    /*    border: 2px solid #fff;*/
+    /*    border-style: solid none solid solid;
+    border-radius: var(--border-radius-unit) 0 0 var(--border-radius-unit);*/
 }
 
 .tbody .tr li:last-child {
-    border: 2px solid #1CAB9B;
+    /*    border: 2px solid #fff;
     border-style: solid solid solid none;
-    border-radius: 0 var(--border-radius-unit) var(--border-radius-unit) 0;
+    border-radius: 0 var(--border-radius-unit) var(--border-radius-unit) 0;*/
 }
 
 
