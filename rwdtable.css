@@ -27,7 +27,8 @@ ul {
     display: inline-block;
     /*    border-bottom: 3px solid var(--main-color);*/
     margin: 0;
-    /*    border-collapse: collapse;*/
+    border-collapse: collapse;
+    /*才看的到table的格線*/
 }
 
 .rwd-table ol {
@@ -62,22 +63,21 @@ ul {
 .tr li {
     display: table-cell;
     padding: 1rem;
-    border-bottom: 0.3rem solid #FFF;
+    /*        border-bottom: 0.3rem solid #FFF;*/
 }
 
 
 .thead li {
     padding-bottom: 0px;
+    /*    讓thead貼近tbody*/
 }
 
 .tr {
     display: table-row;
 }
 
-.tbody .tr:first-child li:first-child {}
-
-.tbody ol.tr {
-    margin-bottom: 1rem;
+.tbody .tr {
+    border-bottom: 0.2rem solid white;
 }
 
 .tr li {
@@ -126,7 +126,7 @@ ul {
         display: none;
     }
 
-    .tr {
+    .tbody .tr {
         display: block;
         border: 2px dotted var(--main-color);
         margin-bottom: 0.2rem;
@@ -134,10 +134,11 @@ ul {
     }
 
     .tr li {
+        /*        每筆資料之間的間隔*/
         display: inline-block;
         width: 100%;
         border: none;
-        padding: .2rem;
+        padding: 0.2rem;
         border-bottom: 2px dotted var(--main-color);
     }
 
