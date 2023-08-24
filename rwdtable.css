@@ -86,7 +86,7 @@ ul {
 }
 
 .tbody .tr li {
-    background-color: var(--secondary-color-2);
+    background-color: var(--secondary-color);
 }
 
 .tbody .tr li:hover {
