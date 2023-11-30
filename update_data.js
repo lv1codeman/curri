@@ -12,6 +12,9 @@ $(function() {
     let withdraw_date = document.getElementById('withdraw_date');
     let course_selection_last_day = document.getElementById('course_selection_last_day');
 
+    let ee_course_search = document.getElementById('ee_course_search');
+
+
     $.ajax({
         //請求方式為get
         type: "GET",
@@ -42,6 +45,7 @@ $(function() {
             // modify_date.innerHTML = data["選課更正"];
             withdraw_date.innerHTML = data["期中停修"];
             course_selection_last_day.innerHTML = data["網路加退選最後一天"];
+            ee_course_search.innerHTML = data["進院_課程查詢"];
         }
     });
 });

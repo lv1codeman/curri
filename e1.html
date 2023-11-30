@@ -34,12 +34,12 @@
                 <div class="outlink">
                     <button class="button button--pan"><span>本學期選課須知</span></button>
                 </div>
-                <div class="title">112 學年度第 1 學期選課階段與時間</div>
+                <div class="title"><span class="year"></span>學年度第<span class="semester"></span>學期選課階段與時間</div>
                 <ul class="rwd-table">
                     <li class="thead">
                         <ol class="tr">
                             <li>
-                                <h3>選課階段</h3>
+                                <h3>項目</h3>
                             </li>
                             <li>
                                 <h3>時間</h3>
@@ -166,8 +166,73 @@
                 </div>
             </div>
             <div id="Night" class="tabcontent" style="display: none; ">
-                <h2>進修學院112學年度暑期班選課日程表(碩士在職專班)</h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores adipisci aliquid minus tempore dolor quos, molestias in saepe veritatis, officiis odio qui mollitia, suscipit iure ullam nobis totam ea, libero excepturi. Hic aut, a, inventore quod ex quo ducimus esse provident quas eos vel repellat nobis, architecto! Provident quos expedita at culpa minima fugit, adipisci similique ullam nisi ratione. Provident eaque magnam facilis tempore obcaecati voluptate voluptates libero? Porro quidem error eaque numquam vitae at quibusdam praesentium quod aut dolores, maiores perferendis et ratione vero repellendus esse dignissimos sequi placeat exercitationem tenetur commodi illo odit. Impedit perspiciatis dolore corrupti enim tenetur, veritatis earum, a harum molestiae unde. Quam aspernatur distinctio quae sit nostrum perspiciatis, assumenda dolor repellendus, repellat, sapiente cumque officia minus at ipsam numquam quos modi commodi est. Nesciunt alias quibusdam velit impedit obcaecati mollitia ipsum vero dolore corporis est iure id saepe, animi beatae, quaerat soluta non? Corrupti, ipsam veritatis, nobis dolores fuga voluptate aspernatur consectetur vero suscipit alias autem rerum animi temporibus, nemo, quaerat tempora quos sint blanditiis. Doloremque, reiciendis. Nulla in totam ipsum, similique reiciendis consequatur libero adipisci nisi, obcaecati suscipit accusantium voluptatem distinctio officia, quis voluptates, sunt debitis. Quis necessitatibus tenetur id facere, similique, quae sequi laborum reiciendis molestias quos, quibusdam! Numquam eveniet molestiae, perspiciatis adipisci eum et aperiam architecto aliquid voluptatum veniam omnis corrupti asperiores repellendus delectus ducimus non, rerum error magnam commodi minima libero ex obcaecati. Quaerat eveniet quia molestiae cumque saepe fugiat veritatis tenetur quibusdam aliquam. Corrupti doloribus sed maxime velit sequi ex corporis commodi provident labore dolore necessitatibus numquam alias est, saepe harum dolores modi eveniet, architecto laborum obcaecati vitae, sunt. Eligendi expedita eius, nulla nostrum deleniti nobis reiciendis, harum dolores asperiores architecto maiores, commodi cum odit amet labore ipsa, necessitatibus quasi nemo? Eum quis facere rerum iste suscipit corrupti? Magni atque tenetur minima nesciunt laborum dolores eligendi distinctio. Minus, nulla cum? Voluptatum voluptatibus cumque reiciendis? Assumenda harum inventore iusto odit? Eaque nemo, assumenda, inventore corporis in magnam architecto sunt sed repellendus autem sapiente quibusdam? Animi corrupti tempora, deserunt, ratione inventore quia, enim nulla doloremque aut fuga dignissimos accusamus ut praesentium exercitationem temporibus aliquid delectus maxime omnis necessitatibus non. Cumque ab nostrum minus ea, magnam voluptate dolorem dignissimos assumenda libero necessitatibus praesentium enim modi ipsum maxime velit voluptates ex adipisci vel omnis culpa veniam numquam porro! Expedita optio totam beatae porro veritatis sunt, soluta molestias quis iusto nihil enim neque recusandae ea autem, non fugiat maxime asperiores! Laborum dignissimos iste deleniti qui exercitationem iusto et ea ex alias maiores, voluptate quis hic asperiores suscipit tenetur dolorum eveniet, quaerat aliquid animi harum. Labore, laboriosam. Delectus at dolorem accusantium asperiores eligendi saepe cumque nisi est cum suscipit labore magni fuga ut libero, sunt quis consequatur odit rem. Magnam eaque facere voluptate recusandae consectetur eos totam architecto quaerat iste natus in facilis neque alias fugiat modi delectus velit tenetur a ab dignissimos tempore incidunt, corporis reiciendis. Id, dicta, mollitia odit dolores molestias quo blanditiis ex voluptates dolorem ipsam minus dolorum molestiae odio quisquam temporibus.
+                <div class="title">進修學院<span class="year"></span>學年度暑期班選課日程表(碩士在職專班)</div>
+                <ul class="rwd-table">
+                    <li class="thead">
+                        <ol class="tr">
+                            <li>
+                                <h3>項目</h3>
+                            </li>
+                            <li>
+                                <h3>時間</h3>
+                            </li>
+                            <li>
+                                <h3>備註</h3>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="tbody">
+                        <ol class="tr">
+                            <li data-title="">課程查詢</li>
+                            <li data-title="時間">
+                                <span id="ee_course_search"></span>
+                            </li>
+                            <li data-title="說明"><span class="year"></span>學年度第<span class="semester"></span>學期課程查詢。</li>
+                        </ol>
+                        <ol class="tr">
+                            <li data-title="">教學意見<br class="responsive" />反應問卷(SG020)</li>
+                            <li data-title="時間">
+                                <span id="pre_selection"></span>
+                                <!-- <div class="pre_selection_hint">**當學期轉入之轉學生、前一學期提早入學生，請於新生預選階段選課**</div> -->
+                                <div class="pre_selection_hint"><span id="pre_selection_hint"></span></div>
+                            </li>
+                            <li data-title="說明">
+                                1. 採先登記後篩選制度(無關登記順序)<br>
+                                2. 選課優先順序請詳閱 選課流程暨須知<br>
+                                3. 公告預選篩選結果<br>
+                                <span id="ee_question"></span>
+                        </ol>
+                        <ol class="tr">
+                            <li data-title="">網路加退選<br class="responsive" />(SC020)</li>
+                            <li data-title="時間">
+                                <span class="ee_course_selection"></span>
+                                <span id="online_sign"></span>
+                            </li>
+                            <li data-title="說明">
+                                1. 即選即上<br>
+                                2. 自開學第一週起，可透過SC030加簽登記作業申請加簽<br>
+                                3. 通識師培課程開學第一、二週僅能使用SC030加簽登記作業申請加簽
+                            </li>
+                        </ol>
+                        <ol class="tr">
+                            <li data-title="">人工<br class="responsive" />選課更正</li>
+                            <li data-title="時間">
+                                <span class="modify_date"></span>
+                            </li>
+                            <li data-title="說明">
+                                1. 請填寫選課更正暨繳費申請表<br>
+                                2. 需手續費(200元/科)
+                            </li>
+                        </ol>
+                        <ol class="tr">
+                            <li data-title="">期中停修</li>
+                            <li data-title="時間">
+                                <span id="withdraw_date"></span>
+                            </li>
+                            <li data-title="說明">兩科為限，於教務系統申請線上停修</li>
+                        </ol>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
