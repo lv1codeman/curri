@@ -155,6 +155,10 @@
         padding: 0.5rem 1rem;
     }
 
+    .tbody .tr li:last-child {
+        width: 100%;
+    }
+
     .tr li:first-child {
         color: var(--main-color);
         padding-bottom: 0;

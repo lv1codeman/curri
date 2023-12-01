@@ -13,7 +13,10 @@ $(function() {
     let course_selection_last_day = document.getElementById('course_selection_last_day');
 
     let ee_course_search = document.getElementById('ee_course_search');
-
+    let ee_question = document.getElementById('ee_question');
+    let ee_course_selection = document.getElementById('ee_course_selection');
+    let ee_sign = document.getElementById('ee_sign');
+    let ee_modify = document.getElementById('ee_modify');
 
     $.ajax({
         //請求方式為get
@@ -45,7 +48,13 @@ $(function() {
             // modify_date.innerHTML = data["選課更正"];
             withdraw_date.innerHTML = data["期中停修"];
             course_selection_last_day.innerHTML = data["網路加退選最後一天"];
+
+            //進修學院
             ee_course_search.innerHTML = data["進院_課程查詢"];
+            ee_question.innerHTML = data["進院_教學問卷"];
+            ee_course_selection.innerHTML = data["進院_網路加退選"];
+            ee_sign.innerHTML = data["進院_大學部課程加簽"];
+            ee_modify.innerHTML = data["進院_逾期選課更正"];
         }
     });
 });
