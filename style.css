@@ -198,17 +198,19 @@ br.responsive {
 
 .panel {
     /*    display: none;*/
-    display: fixed;
-    top: 27%;
+    position: sticky;
+    top: 3.5rem;
     right: 10%;
+    background-color: white;
 }
 
 .flip {
-    width: fit-content;
+    width: 100%;
     /*    display: fixed;*/
     position: sticky;
-    top: 2%;
+    top: 0;
     padding-top: 1rem;
     z-index: 2;
+    background-color: white;
 
 }
