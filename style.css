@@ -199,16 +199,16 @@ br.responsive {
 .panel {
     /*    display: none;*/
     display: fixed;
-    position: absolute;
     top: 27%;
     right: 10%;
 }
 
 .flip {
+    width: fit-content;
     /*    display: fixed;*/
     position: sticky;
     top: 2%;
     padding-top: 1rem;
     z-index: 2;
-    width: fit-content;
+
 }
