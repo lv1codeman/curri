@@ -43,9 +43,7 @@ $(function() {
             pre_selection.innerHTML = data["網路預選"];
             pre_selection_result.innerHTML = data["公告預選"];
             pre_selection_hint.innerHTML = data["網路預選_hint"];
-            // course_selection.innerHTML = data["網路加退選"];
             online_sign.innerHTML = data["線上加簽"];
-            // modify_date.innerHTML = data["選課更正"];
             withdraw_date.innerHTML = data["期中停修"];
             course_selection_last_day.innerHTML = data["網路加退選最後一天"];
 
