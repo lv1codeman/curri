@@ -7,9 +7,9 @@ $(function() {
     let pre_selection_result = document.getElementById('pre_selection_result');
     let course_selection = document.querySelectorAll('.course_selection');
     let online_sign = document.getElementById('online_sign');
-    let pre_selection_hint = document.getElementById('pre_selection_hint');
-    let modify_date = document.querySelectorAll('.modify_date');
     let withdraw_date = document.getElementById('withdraw_date');
+    let modify_date = document.querySelectorAll('.modify_date');
+    let w1 = document.getElementById('w1');
     let course_selection_last_day = document.getElementById('course_selection_last_day');
 
     let ee_course_search = document.getElementById('ee_course_search');
