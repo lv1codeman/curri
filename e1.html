@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <script type="text/javascript">
     $(function() {
-        $(".flip").click(function() {
+        $("#menubtn").click(function() {
             $(".panel").slideToggle("slow");
         });
     });
@@ -29,12 +29,12 @@
         <div class="tabbackground">
             <div id="Day" class="tabcontent">
                 <div class="flip">
-                    <button class="button button--pan"><span>連結選單</span></button>
+                    <button id="menubtn" class="button button--pan"><span>連結選單</span></button>
                 </div>
                 <div class="panel">
                     <div class="outlink">
                         <button class="button button--pan" onclick="window.open('https://webap0.ncue.edu.tw/Student/BaseUser/LoginSSO','_blank')"><span>登入教務系統</span></button>
-                        <button class="button button--pan" onclick="window.open('http://webapt.ncue.edu.tw/deanv2/other/ob010','_blank')"><span>課程查詢</span></button>
+                        <button class="button button--pan" onclick="window.open('https://webapt.ncue.edu.tw/deanv2/other/ob010','_blank')"><span>課程查詢</span></button>
                         <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/1011/894542120.pdf','_blank')"><span>教務系統使用說明</span></button>
                         <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/','_blank')"><span>教務處網站連結</span></button>
                         <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/958/course.html','_blank')"><span>選課專區</span></button>

@@ -33,6 +33,7 @@
     --menubtn-text-hover: white;
     --menubtn-bg-before: #FFFCCC;
     --menubtn-bg-hover: #FF8000;
+    --menubg-color: #F0FFFF;
 
     --btn-text-before: #A25E5E;
     --btn-text-hover: white;
@@ -220,7 +221,7 @@ br.responsive {
 .panel {
     display: none;
     position: sticky;
-    background-color: #F0FFFF;
+    background-color: var(--mainbg);
     top: 2.5rem;
     z-index: 2;
 
