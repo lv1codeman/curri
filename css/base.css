@@ -1,14 +1,15 @@
 .button {
     pointer-events: auto;
     cursor: pointer;
-    background: #e7e7e7;
+    /*    background: #e7e7e7;*/
     border: none;
     padding: .5rem 1rem;
     margin: 0;
-    font-family: inherit;
-    font-size: inherit;
     position: relative;
-    display: inline-block;
+    /*font-family: inherit;
+font-size: inherit;
+display: inline-block;*/
+
 }
 
 .button::before,
@@ -21,25 +22,52 @@
 }
 
 .button--pan {
-    /*    font-family: aktiv-grotesk-extended, sans-serif;*/
     font-weight: 700;
-    border: 2px solid #000;
+    /*    border: 2px solid #078E8E;*/
     border-radius: 3rem;
     overflow: hidden;
-    color: black;
+    color: #078E8E;
+    background: #078E8E;
 }
 
 .button--pan span {
     position: relative;
-    /*    mix-blend-mode: difference;*/
 }
 
 .button--pan::before {
     content: '';
-    background: white;
+    background: #C4F3F2;
     transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+
 }
 
 .button--pan:hover::before {
     transform: translate3d(0, -100%, 0);
 }
+
+.button--pan:hover {
+    color: white;
+}
+
+
+.flip>.button {
+    color: #FF8000;
+    border: 2px solid #FF8000;
+    background: #FF8000;
+}
+
+.flip>.button::before {
+    background: #FFFCCC;
+}
+
+.flip>.button:hover {
+    background: #FF8000;
+    color: white;
+}
+
+/*
+    #FF8000 橘色
+    #FFFCCC 米色
+    #078E8E 深色
+    #C4F3F2 淺色
+*/
