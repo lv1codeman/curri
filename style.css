@@ -22,9 +22,12 @@
     --swiper-theme-color: #53DBDB;
     /*套件swiper的顏色*/
 
+    --mainbg: #FAFFFF;
+
     --border-style: 2px solid var(--bs-gray-400);
     --border-radius-unit: 10px;
     --border-radius-unit-20: 20px;
+
 }
 
 /*初始化*/
@@ -55,23 +58,28 @@ br.responsive {
 
 .container {
     margin-top: 10px;
-    max-width: 1000px;
+    /*    max-width: 1000px;*/
     margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
 }
 
+.rwd-table_outer {
+    text-align: center;
+}
+
 .tabbackground {
     border: var(--border-style);
     border-top: none;
-    background-color: azure;
+    background-color: var(--mainbg);
     border-radius: 0 0 var(--border-radius-unit) var(--border-radius-unit);
     padding: 0 2rem;
 }
 
 .tabgroup {
     display: flex;
+
 }
 
 .tablink {
@@ -81,7 +89,7 @@ br.responsive {
     text-align: center;
     border: var(--border-style);
     border-right: none;
-    background-color: azure;
+    background-color: var(--mainbg);
     border-radius: var(--border-radius-unit) var(--border-radius-unit) 0 0;
     padding: 15px 0;
 }
@@ -206,13 +214,15 @@ br.responsive {
 }
 
 .flip {
-
     position: sticky;
-    width: 100%;
+    width: calc(100%+2rem);
     top: 0;
-    background-color: #F0FFFF;
+    background-color: var(--mainbg);
     z-index: 3;
-
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 0 0 0 2rem;
+    /*    border: 1px solid black;*/
 }
 
 .flip button {

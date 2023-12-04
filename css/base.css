@@ -1,14 +1,10 @@
 .button {
     pointer-events: auto;
     cursor: pointer;
-    /*    background: #e7e7e7;*/
     border: none;
     padding: .5rem 1rem;
     margin: 0;
     position: relative;
-    /*font-family: inherit;
-font-size: inherit;
-display: inline-block;*/
 
 }
 
