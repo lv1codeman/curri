@@ -222,7 +222,7 @@ br.responsive {
     display: none;
     position: sticky;
     background-color: var(--mainbg);
-    top: 2.5rem;
+    top: 3.5rem;
     z-index: 2;
 
 }
@@ -235,10 +235,11 @@ br.responsive {
     z-index: 3;
     margin-left: -2rem;
     margin-right: -2rem;
-    padding: 0 0 0 2rem;
+    padding: .5rem 2rem .5rem 2rem;
+    text-align: right;
     /*    border: 1px solid black;*/
 }
 
-.flip button {
+/*.flip button {
     width: 7rem;
-}
+}*/
