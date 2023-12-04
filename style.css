@@ -28,6 +28,19 @@
     --border-radius-unit: 10px;
     --border-radius-unit-20: 20px;
 
+
+    --menubtn-text-before: #FF8000;
+    --menubtn-text-hover: white;
+    --menubtn-bg-before: #FFFCCC;
+    --menubtn-bg-hover: #FF8000;
+
+    --btn-text-before: #A25E5E;
+    --btn-text-hover: white;
+    --btn-bg-before: #C4F3F2;
+    --btn-bg-hover: #078E8E;
+
+
+
 }
 
 /*≥ı ºªØ*/
