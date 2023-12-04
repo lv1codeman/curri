@@ -198,19 +198,44 @@ br.responsive {
 
 .panel {
     /*    display: none;*/
-    position: sticky;
-    top: 3.5rem;
-    right: 10%;
-    background-color: white;
+    /*    position: sticky;*/
+    position: fixed;
+    top: 25%;
+    right: 23.5rem;
+    /*    background-color: white;*/
+    z-index: 1;
 }
 
 .flip {
-    width: 100%;
-    /*    display: fixed;*/
-    position: sticky;
-    top: 0;
-    padding-top: 1rem;
-    z-index: 2;
-    background-color: white;
 
+    position: fixed;
+    /*    position: absolute;*/
+    z-index: 2;
+    /*    position: sticky;*/
+    /*    margin-top: 5rem;*/
+    width: fit-content;
+    /*    width: 100%;*/
+    margin: 5rem 52rem;
+
+}
+
+.flip button {
+    width: 7rem;
+}
+
+@media screen and (max-width: 768px) {
+    .flip {
+        width: fit-content;
+        margin: 5rem 14rem;
+    }
+
+    .panel {
+        /*    display: none;*/
+        /*    position: sticky;*/
+        position: fixed;
+        top: 25%;
+        right: 3%;
+        /*    background-color: white;*/
+        z-index: 1;
+    }
 }
