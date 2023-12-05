@@ -118,7 +118,6 @@ br.responsive {
 }
 
 .title {
-    /*    text-decoration: underline;*/
     font-size: 1.8rem;
     font-weight: 600;
     padding: 4rem 0 1rem 0;
@@ -163,16 +162,6 @@ br.responsive {
 .menu a:last-child:after {
     content: '';
 }
-
-
-/*.outlink {
-    display: flex;
-    justify-content: space-around;
-    padding: .5rem 0;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-}
-*/
 
 .outlink {
     display: grid;

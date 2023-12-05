@@ -17,10 +17,9 @@
 }
 
 .rwd-table {
-    /*width: fit-content; div寬度根據內容自適應*/
-    width: auto;
+    max-width: 80%;
+    /*設定.rwd-table的最大寬度*/
     display: inline-block;
-    /*    border-bottom: 3px solid var(--main-color);*/
     margin: 0;
     border-collapse: collapse;
     /*才看的到table的格線*/
