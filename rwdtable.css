@@ -17,8 +17,9 @@
 }
 
 .rwd-table {
-    max-width: 80%;
+    /*    max-width: 100%;*/
     /*設定.rwd-table的最大寬度*/
+    /*    width: 100%;*/
     display: inline-block;
     margin: 0;
     border-collapse: collapse;
