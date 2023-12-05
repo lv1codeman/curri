@@ -97,7 +97,7 @@ br.responsive {
 }
 
 .tablink {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 600;
     flex-basis: 100%;
     text-align: center;
@@ -106,6 +106,7 @@ br.responsive {
     background-color: var(--mainbg);
     border-radius: var(--border-radius-unit) var(--border-radius-unit) 0 0;
     padding: 15px 0;
+    color: black;
 }
 
 .tablink:last-child {
@@ -117,11 +118,23 @@ br.responsive {
 }
 
 .title {
-    font-size: 26px;
+    /*    text-decoration: underline;*/
+    font-size: 1.8rem;
     font-weight: 600;
-    padding: 1.5rem 0;
+    padding: 4rem 0 1rem 0;
     text-align: center;
     letter-spacing: 0.1rem;
+}
+
+.hr1 {
+    border: 1px solid black;
+    border-radius: 200px;
+    width: 50%;
+    margin: 0rem auto .5rem auto;
+}
+
+.news {
+    line-height: 1.7rem;
 }
 
 .function_name {
@@ -236,18 +249,26 @@ br.responsive {
     z-index: 3;
     margin-left: -2rem;
     margin-right: -2rem;
-    padding: .5rem 2rem .5rem 2rem;
+    padding: .5rem .5rem .5rem 2rem;
     text-align: right;
     /*    border: 1px solid black;*/
 }
 
-/*.flip button {
-    width: 7rem;
-}*/
+.flip button {
+    margin-right: .5rem;
+}
+
+.flip button:last-child {
+    margin-right: 0rem;
+}
 
 @media screen and (max-width: 768px) {
     br.responsive {
         display: none;
+    }
+
+    .tablink {
+        font-size: 1.5rem;
     }
 
     .outlink {
@@ -265,6 +286,10 @@ br.responsive {
         white-space: nowrap;
         font-size: .9rem;
         font-weight: bold;
+    }
+
+    .flip {
+        padding: .5rem 0rem .5rem 2rem;
     }
 
 
