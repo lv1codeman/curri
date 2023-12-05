@@ -47,11 +47,16 @@
 
 .tbody {
     display: table-row-group;
-    /*    border: 3px solid red; 要在rwd-table加上border-collapse: collapse;才能使用border*/
+
 }
 
 .thead {
     display: table-header-group;
+}
+
+.th {
+    display: table-header;
+    /*    display: table-cell;*/
 }
 
 .thead li,
@@ -175,22 +180,6 @@
         font-weight: 900;
         font-size: 1.1rem;
     }
-
-    /*    .tr li:before {
-        width: 2em;
-        border-bottom: 1px solid black;
-    }
-
-    .tr li:first-child:before {
-        border-bottom: none;
-    }
-
-
-    .tr li:last-child {
-        border-bottom: none;
-    }*/
-
-
 
     .rwd-table ol {
         text-align: left;

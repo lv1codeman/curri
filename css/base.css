@@ -5,6 +5,7 @@
     padding: .5rem 1rem;
     margin: 0;
     position: relative;
+    /*    width: 100%;*/
 
 }
 
@@ -28,6 +29,7 @@
 
 .button--pan span {
     position: relative;
+    /*    font-size: .5rem;*/
 }
 
 .button--pan::before {
