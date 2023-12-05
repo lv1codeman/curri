@@ -28,7 +28,6 @@
 
 .rwd-table ol {
     word-wrap: break-word;
-    padding-right: 2em;
     text-align: justify;
     /* 文字左右對齊　*/
     text-justify: auto;
@@ -47,16 +46,10 @@
 
 .tbody {
     display: table-row-group;
-
 }
 
 .thead {
     display: table-header-group;
-}
-
-.th {
-    display: table-header;
-    /*    display: table-cell;*/
 }
 
 .thead li,
