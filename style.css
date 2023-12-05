@@ -35,10 +35,15 @@
     --menubtn-bg-hover: #FF8000;
     --menubg-color: #F0FFFF;
 
-    --btn-text-before: #A25E5E;
+    /*--btn-text-before: #A25E5E;
     --btn-text-hover: white;
     --btn-bg-before: #C4F3F2;
-    --btn-bg-hover: #078E8E;
+    --btn-bg-hover: #078E8E;*/
+
+    --btn-text-before: #A25E5E;
+    --btn-text-hover: white;
+    --btn-bg-before: #D9F7F7;
+    --btn-bg-hover: #336666;
 
 
 
@@ -54,6 +59,7 @@
 
 body {
     font-family: 'lato', sans-serif;
+    background-color: #FDFFFF;
 }
 
 ul {
@@ -64,15 +70,9 @@ br.responsive {
     display: inline;
 }
 
-@media screen and (max-width: 768px) {
-    br.responsive {
-        display: none;
-    }
-}
-
 .container {
     margin-top: 10px;
-    /*    max-width: 1000px;*/
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
@@ -160,6 +160,7 @@ br.responsive {
     grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
     gap: .3rem;
     padding: .5rem 0;
+    justify-items: center;
 }
 
 .outlink>button {
@@ -243,3 +244,28 @@ br.responsive {
 /*.flip button {
     width: 7rem;
 }*/
+
+@media screen and (max-width: 768px) {
+    br.responsive {
+        display: none;
+    }
+
+    .outlink {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(9rem, 2fr));
+        gap: 0.3rem;
+        padding: 0.5rem 0;
+    }
+
+    .outlink>button {
+        display: flex;
+        text-align: center;
+        width: 9.5rem;
+        text-decoration: none;
+        white-space: nowrap;
+        font-size: .9rem;
+        font-weight: bold;
+    }
+
+
+}
