@@ -126,6 +126,10 @@ br.responsive {
     letter-spacing: 0.1rem;
 }
 
+.first_title {
+    padding: 1rem 0 1rem 0;
+}
+
 .hr1 {
     border: 1px solid black;
     border-radius: 200px;
