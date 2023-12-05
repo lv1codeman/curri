@@ -139,6 +139,8 @@ br.responsive {
 
 .news {
     line-height: 1.7rem;
+    text-align: justify;
+    word-break: break-all;
 }
 
 .function_name {
