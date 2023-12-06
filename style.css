@@ -49,10 +49,15 @@
 
 }
 
-.text_highlight1 {
+.text_hl1 {
+    background-color: #FFFF00
+}
+
+.text_hl2 {
     color: #2b5737;
     background-color: #c0ebcc;
 }
+
 
 /*≥ı ºªØ*/
 * {
@@ -270,15 +275,6 @@ p {
 .flip button:last-child {
     margin-right: 0rem;
 }
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
     br.responsive {
