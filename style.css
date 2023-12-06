@@ -49,6 +49,11 @@
 
 }
 
+.text_highlight1 {
+    color: #2b5737;
+    background-color: #c0ebcc;
+}
+
 /*≥ı ºªØ*/
 * {
     margin: 0;
@@ -140,6 +145,15 @@ br.responsive {
     line-height: 1.7rem;
     text-align: justify;
     word-break: break-all;
+    /*text-indent: -1.2em;
+    padding: 0em 0em 0em 2em;*/
+}
+
+p {
+    /*    font-size: 20px;*/
+    text-indent: -1.2em;
+    padding: 0em 1.2em 0em 2em;
+    margin-bottom: 0rem;
 }
 
 .function_name {
@@ -250,12 +264,21 @@ br.responsive {
 }
 
 .flip button {
-    margin-right: .5rem;
+    margin-right: .3rem;
 }
 
 .flip button:last-child {
     margin-right: 0rem;
 }
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
     br.responsive {
@@ -279,7 +302,7 @@ br.responsive {
     }
 
     .flip {
-        padding: .5rem 0rem .5rem 2rem;
+        padding: .5rem 0rem .5rem 0rem;
     }
 
 

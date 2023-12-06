@@ -11,6 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/rnz2bks.css">
     <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/7ee2821e39.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
     $(function() {
         $("#menubtn").click(function() {
@@ -32,19 +34,19 @@
             <div id="Day" class="tabcontent">
                 <div class="flip">
                     <button class="button button--pan" onclick="window.open('https://webap0.ncue.edu.tw/Student/BaseUser/LoginSSO','_blank')"><span>登入教務系統</span></button>
+                    <button class="button button--pan" onclick="window.open('https://webapt.ncue.edu.tw/deanv2/other/ob010','_blank')"><span>課程查詢</span></button>
                     <button id="menubtn" class="button button--pan"><span>連結選單</span></button>
                 </div>
                 <div class="panel">
                     <div class="outlink">
-                        <button class="button button--pan" onclick="window.open('https://webapt.ncue.edu.tw/deanv2/other/ob010','_blank')"><span>課程查詢</span></button>
-                        <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/1011/894542120.pdf','_blank')"><span>教務系統使用說明</span></button>
-                        <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/','_blank')"><span>教務處網站連結</span></button>
+                        <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/783/CourseSelectInfo.pdf','_blank')"><span>選課須知</span></button>
                         <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/958/course.html','_blank')"><span>選課專區</span></button>
+                        <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/','_blank')"><span>教務處網站連結</span></button>
                         <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/1011/712520307.html','_blank')"><span>各節次上課時間</span></button>
                         <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/1011/114294831.html','_blank')"><span>教室代碼對照表</span></button>
                         <button class="button button--pan" onclick="window.open('https://ccource.ncue.edu.tw/bin/home.php','_blank')"><span>通識教育中心</span></button>
                         <button class="button button--pan" onclick="window.open('https://aps.ncue.edu.tw/over_credit/','_blank')"><span>超修管理系統</span></button>
-                        <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/783/CourseSelectInfo.pdf','_blank')"><span>選課須知</span></button>
+                        <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/1011/894542120.pdf','_blank')"><span>教務系統使用說明</span></button>
                         <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/1011/250399916.pdf','_blank')"><span>線上加簽說明(教師)</span></button>
                         <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/1011/109461211.pdf','_blank')"><span>線上加簽說明(學生)</span></button>
                     </div>
@@ -122,33 +124,39 @@
                 </div>
                 <div class="title">最新消息</div>
                 <div class="news">
-                    <font style="background-color: #FFFF00">
-                        1. 網路加退選時間為<b><span class="course_selection"></span></b>，請同學們注意時程，避免選課權益受損。
-                    </font>
-                    <br>
-                    <font style="background-color: #FFFF00">
-                        2. <b>請同學務必於<span id="course_selection_last_day"></span>選課截止前檢查所選課程</b>
-                    </font>，如需更正請於<span class="modify_date"></span>辦理選課更正。
-                    <br> 3. 「大一英文」選課名單統一由學校匯入所屬學院分級後之班級，本屆大一生(學號 S12 開頭)可於預選時登入教務系統查詢，請同學務必詳讀<a href="https://acadaff.ncue.edu.tw/var/file/2/1002/img/783/English.pdf" target="_blank" style="color: #0000ff;">「大一英文及精進英外文」</a>選課須知。
-                    <br> 4. 數位學習中心宣導，依本校遠距教學辦法第十條：
-                    <font style="background-color: #FFFF00">
-                        <b>本校學生修習遠距教學課程，其修習學分(含抵免學分)總數以不超過畢業總學分之二分之一為限。</b>
-                    </font>惟數位學習在職專班的學生，不受前述修習遠距教學學分數之限制。
-                    <br> 5. 通識教育中心宣導：選課前請務必至通識教育中心網站參考<a href="http://ccource.ncue.edu.tw/files/11-1032-2314.php" target="_blank">各學年度入學領域與課程對照表</a>
-                    <br> 6. 師資培育中心宣導：依本校教育學程修習辦法規定教育專業課程之修業年限，應至少二學年(至少4學期，不含寒、暑期修課，且具實際修習教育專業課程之事實)；學生修習
-                    <font color="red">各師資類科教育專業課程</font>， 每學期修習學分數上限為各師資類科教育專業課程總學分數之三分之一(
-                    <font color="blue">
-                        如有修習暑修，暑期修習<font color="red">各師資類科教育專業課程</font>至多列計<font color="red">3門科目或6學分</font>，上述暑期學分不列入學期修習學分總數， 且不計入教育專業課程之修業年限，惟暑期所修習之教育專業課程學分數得併入師資職前教育課程學分數計算。
-                    </font>
-                    )；105學年度起師資生應修畢「職業教育與訓練」及「生涯規劃」相關科目。
-                    <br>
-                    <font style="color: #2b5737; background-color:#c0ebcc;">
-                        <b>7. 本校大學部一年級【課程名稱：體育(一)、體育(二)；課程性質：校必(體)】、二年級【開課班別：大二體育；課程性質：校必(體)】，<br>
-                            每學期各1學分，共4學分，均不計入畢業學分。
-                        </b>「體育課程選課須知」，請至本校教務處→課務組→選課專區查詢。
-                        <br>
-                        <b>8. 本校軍訓課程不列入畢業學分</b>，「軍訓課程選課須知」請至本校教務處→課務組→選課專區查詢。
-                    </font>
+                    <p>
+                        <font style="background-color: #FFFF00">
+                            1. 網路加退選時間為<b><span class="course_selection"></span></b>，請同學們注意時程，避免選課權益受損。
+                        </font>
+                    </p>
+                    <p>
+                        <font style="background-color: #FFFF00">
+                            2. <b>請同學務必於<span id="course_selection_last_day"></span>選課截止前檢查所選課程</b>
+                        </font>，如需更正請於<span class="modify_date"></span>辦理選課更正。
+                    </p>
+                    <p>
+                        3. 「大一英文」選課名單統一由學校匯入所屬學院分級後之班級，本屆大一生(學號 S12 開頭)可於預選時登入教務系統查詢，請同學務必詳讀<a href="https://acadaff.ncue.edu.tw/var/file/2/1002/img/783/English.pdf" target="_blank" style="color: #0000ff;">「大一英文及精進英外文」</a>選課須知。
+                    </p>
+                    <p>4. 數位學習中心宣導，依本校遠距教學辦法第十條：
+                        <font style="background-color: #FFFF00">
+                            <b>本校學生修習遠距教學課程，其修習學分(含抵免學分)總數以不超過畢業總學分之二分之一為限。</b>
+                        </font>惟數位學習在職專班的學生，不受前述修習遠距教學學分數之限制。
+                    </p>
+                    <p> 5. 通識教育中心宣導：選課前請務必至通識教育中心網站參考<a href="http://ccource.ncue.edu.tw/files/11-1032-2314.php" target="_blank">各學年度入學領域與課程對照表</a>
+                    </p>
+                    <p>6. 師資培育中心宣導：依本校教育學程修習辦法規定教育專業課程之修業年限，應至少二學年(至少4學期，不含寒、暑期修課，且具實際修習教育專業課程之事實)；學生修習
+                        <font color="red">各師資類科教育專業課程</font>， 每學期修習學分數上限為各師資類科教育專業課程總學分數之三分之一(
+                        <font color="blue">
+                            如有修習暑修，暑期修習<font color="red">各師資類科教育專業課程</font>至多列計<font color="red">3門科目或6學分</font>，上述暑期學分不列入學期修習學分總數， 且不計入教育專業課程之修業年限，惟暑期所修習之教育專業課程學分數得併入師資職前教育課程學分數計算。
+                        </font>
+                        )；105學年度起師資生應修畢「職業教育與訓練」及「生涯規劃」相關科目。
+                    </p>
+                    <p>
+                        7. <span class="text_highlight1"><b>本校大學部一年級【課程名稱：體育(一)、體育(二)；課程性質：校必(體)】、二年級【開課班別：大二體育；課程性質：校必(體)】，
+                                每學期各1學分，共4學分，均不計入畢業學分。</b>
+                            「體育課程選課須知」，請至本校教務處→課務組→選課專區查詢。</span>
+                    </p>
+                    <p>8. <span class="text_highlight1"><b>本校軍訓課程不列入畢業學分</b>，「軍訓課程選課須知」請至本校教務處→課務組→選課專區查詢。</span></p>
                     <div class="title">其他單位宣導事項</div>
                     <strong>語文中心公告</strong>：<br> 有關英（外）語能力畢業門檻，完整資訊詳見&gt;語文中心網站之「
                     <a href="https://aps.ncue.edu.tw/lc/" target="_blank">畢業門檻</a>」專區。
