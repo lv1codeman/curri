@@ -11,6 +11,7 @@ $(function() {
     let modify_date = document.querySelectorAll('.modify_date');
     let w1 = document.getElementById('w1');
     let course_selection_last_day = document.getElementById('course_selection_last_day');
+    let fresheng = document.getElementById('fresheng');
 
     let ee_course_search = document.getElementById('ee_course_search');
     let ee_question = document.getElementById('ee_question');
@@ -46,6 +47,7 @@ $(function() {
             online_sign.innerHTML = data["線上加簽"];
             withdraw_date.innerHTML = data["期中停修"];
             course_selection_last_day.innerHTML = data["網路加退選最後一天"];
+            fresheng.innerHTML = data["大一英文"];
 
             //進修學院
             ee_course_search.innerHTML = data["進院_課程查詢"];
