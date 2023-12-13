@@ -271,7 +271,7 @@ p {
 .flip {
     position: sticky;
     width: calc(100%+2rem);
-    top: 0;
+    top: 2.5rem;
     background-color: var(--mainbg);
     z-index: 3;
     margin-left: -2rem;
