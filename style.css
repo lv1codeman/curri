@@ -58,6 +58,17 @@
     background-color: #c0ebcc;
 }
 
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.bold {
+    font-weight: 600;
+}
 
 /*≥ı ºªØ*/
 * {
