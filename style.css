@@ -166,11 +166,20 @@ br.responsive {
     padding: 0em 0em 0em 2em;*/
 }
 
+.news_title {
+    padding: 2rem 0 0rem 2rem;
+    font-size: 1.2rem;
+}
+
 p {
     /*    font-size: 20px;*/
     text-indent: -1.1em;
     padding: 0em 1.2em 0em 2em;
     margin-bottom: 0rem;
+}
+
+p+.puretext {
+    text-indent: -1.3rem;
 }
 
 .function_name {
@@ -293,6 +302,14 @@ p {
 @media screen and (max-width: 768px) {
     br.responsive {
         display: none;
+    }
+
+    p {
+        padding: 0rem 0rem 0rem 0.7rem;
+    }
+
+    p+.puretext {
+        text-indent: 0rem;
     }
 
     .tablink {
