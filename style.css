@@ -263,7 +263,7 @@ p {
     display: none;
     position: sticky;
     /*    background-color: var(--mainbg);*/
-    top: 3.75rem;
+    top: 6.25rem;
     z-index: 2;
     margin: 0 -2rem;
 }
