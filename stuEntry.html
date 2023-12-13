@@ -18,6 +18,14 @@
         $("#menubtn").click(function() {
             $(".panel").slideToggle(300);
         });
+
+
+        $(window).on("scroll", function() {
+            if ($(window).scrollTop() > 150)
+                $(".flip").css('background-color', 'rgba(255, 255, 255, 0.7)');
+            else
+                $(".flip").css('background-color', 'rgba(255, 255, 255, 0)');
+        });
     });
     </script>
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -29,9 +37,7 @@
             gaTrack: true
 
         }, 'google_translate_element');
-
         $('select.goog-te-combo').attr('title', 'translate');
-
     }
     </script>
 </head>
@@ -147,7 +153,7 @@
                         ，如需更正請於<span class="modify_date"></span>辦理選課更正。
                     </p>
                     <p>
-                        <span id="fresheng"></span>
+                        3. <span id="fresheng"></span>
                     </p>
                     <p>4. 數位學習中心宣導，依本校遠距教學辦法第十條：
                         <span class="text_hl1">
