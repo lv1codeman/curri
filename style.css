@@ -87,6 +87,7 @@ br.responsive {
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 2rem;
 }
 
 .rwd-table_outer {
@@ -98,7 +99,7 @@ br.responsive {
     border-top: none;
     background-color: var(--mainbg);
     border-radius: 0 0 var(--border-radius-unit) var(--border-radius-unit);
-    padding: 0 2rem;
+    padding: 0 2rem 1rem 2rem;
 }
 
 .tabgroup {
