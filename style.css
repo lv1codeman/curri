@@ -292,7 +292,7 @@ p+.puretext {
 }
 
 .flip button {
-    /*    margin-right: .3rem;*/
+    margin-right: -0.2rem;
 }
 
 .flip button:last-child {
@@ -329,7 +329,7 @@ p+.puretext {
     }
 
     .flip {
-        padding: .5rem .3rem .5rem 0rem;
+        padding: .5rem .0rem .5rem 0rem;
     }
 
 
