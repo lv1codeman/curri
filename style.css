@@ -9,25 +9,20 @@
     /*強調色，從主色中跳出的配色*/
     --hint-color: #FF864F;
     /*亮點色，使用在要強調的文字或按鈕*/
-
     --darker-color: #4B717F;
     /*主色的深色化#487D7D*/
-
     /*    --secondary-color: #C4F3F2;*/
     --secondary-color: #e3fbfb;
     /*輔色，主色的淡化*/
     --secondary-color-2: #E1F9F8;
     /*輔色，主色的更淡化*/
-
     --swiper-theme-color: #53DBDB;
     /*套件swiper的顏色*/
-
     --mainbg: #FAFFFF;
 
     --border-style: 2px solid var(--bs-gray-400);
     --border-radius-unit: 10px;
     --border-radius-unit-20: 20px;
-
 
     --menubtn-text-before: #FF8000;
     --menubtn-text-hover: white;
@@ -39,9 +34,6 @@
     --btn-text-hover: white;
     --btn-bg-before: #D9F7F7;
     --btn-bg-hover: #336666;
-
-
-
 }
 
 .text_hl1 {
