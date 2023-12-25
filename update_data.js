@@ -13,11 +13,14 @@ $(function() {
     let course_selection_last_day = document.getElementById('course_selection_last_day');
     let fresheng = document.getElementById('fresheng');
 
+    let ee_title = document.getElementById('ee_title');
     let ee_course_search = document.getElementById('ee_course_search');
     let ee_question = document.getElementById('ee_question');
     let ee_course_selection = document.getElementById('ee_course_selection');
     let ee_sign = document.getElementById('ee_sign');
     let ee_modify = document.getElementById('ee_modify');
+    let ee_modify_note = document.getElementById('ee_modify_note');
+    let ee_SG020note = document.getElementById('ee_SG020note');
 
     $.ajax({
         //請求方式為get
@@ -50,11 +53,14 @@ $(function() {
             fresheng.innerHTML = data["大一英文下學期"];
 
             //進修學院
+            ee_title.innerHTML = data["進院_標題下學期"];
             ee_course_search.innerHTML = data["進院_課程查詢"];
             ee_question.innerHTML = data["進院_教學問卷"];
             ee_course_selection.innerHTML = data["進院_網路加退選"];
             ee_sign.innerHTML = data["進院_大學部課程加簽"];
             ee_modify.innerHTML = data["進院_逾期選課更正"];
+            ee_modify_note.innerHTML = data["進院_逾期選課更正說明"];
+            ee_SG020note.innerHTML = data["進院_SG020備註下學期"];
         }
     });
 });
