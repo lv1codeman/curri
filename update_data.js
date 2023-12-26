@@ -19,7 +19,8 @@ $(function() {
     let ee_course_selection = document.getElementById('ee_course_selection');
     let ee_sign = document.getElementById('ee_sign');
     let ee_modify = document.getElementById('ee_modify');
-    let ee_modify_note = document.getElementById('ee_modify_note');
+    let ee_modify_note1 = document.getElementById('ee_modify_note1');
+    let ee_modify_note4 = document.getElementById('ee_modify_note4');
     let ee_SG020note = document.getElementById('ee_SG020note');
 
     $.ajax({
@@ -59,7 +60,8 @@ $(function() {
             ee_course_selection.innerHTML = data["進院_網路加退選"];
             ee_sign.innerHTML = data["進院_大學部課程加簽"];
             ee_modify.innerHTML = data["進院_逾期選課更正"];
-            ee_modify_note.innerHTML = data["進院_逾期選課更正說明"];
+            ee_modify_note1.innerHTML = data["進院_逾期選課更正說明1"];
+            ee_modify_note4.innerHTML = data["進院_逾期選課更正說明4"];
             ee_SG020note.innerHTML = data["進院_SG020備註下學期"];
         }
     });
