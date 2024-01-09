@@ -53,7 +53,8 @@
         <div class="tabbackground">
             <div id="Day" class="tabcontent">
                 <div class="flip">
-                    <button class="button button--pan" onclick="window.open('https://webap.ncue.edu.tw/Student/BaseUser/LoginSSO','_blank')"><span>登入教務系統</span></button>
+                    <button class="button button--pan" data-bs-toggle="modal" data-bs-target="#AAlink"><span>登入教務系統</span></button>
+                    <!-- onclick="window.open('https://webap.ncue.edu.tw/Student/BaseUser/LoginSSO','_blank')" -->
                     <button class="button button--pan" onclick="window.open('https://webapt.ncue.edu.tw/deanv2/other/ob010','_blank')"><span>課程查詢</span></button>
                     <button id="menubtn" class="button button--pan"><span>連結選單 <i id="menuicon" class="fa fa-caret-down" aria-hidden="true"></i></span></button>
                 </div>
@@ -64,11 +65,29 @@
                         <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/','_blank')"><span>教務處網站連結</span></button>
                         <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/1011/712520307.html','_blank')"><span>各節次上課時間</span></button>
                         <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/1011/114294831.html','_blank')"><span>教室代碼對照表</span></button>
-                        <button class="button button--pan" onclick="window.open('https://ccource.ncue.edu.tw/bin/home.php','_blank')"><span>通識教育中心</span></button>
+                        <button class="button button--pan" onclick="window.open('https://ccourceweb.ncue.edu.tw/','_blank')"><span>通識教育中心</span></button>
                         <button class="button button--pan" onclick="window.open('https://aps.ncue.edu.tw/over_credit/','_blank')"><span>超修管理系統</span></button>
                         <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/1011/894542120.pdf','_blank')"><span>教務系統使用說明</span></button>
                         <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/1011/250399916.pdf','_blank')"><span>線上加簽說明(教師)</span></button>
                         <button class="button button--pan" onclick="window.open('https://acadaff.ncue.edu.tw/var/file/2/1002/img/1011/109461211.pdf','_blank')"><span>線上加簽說明(學生)</span></button>
+                    </div>
+                </div>
+                <div id="AAlink" class="modal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header ">
+                                <h5 class="modal-title">請選擇分流</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="button button--pan" onclick="window.open('','_blank')"><span>教務系統分流1</span></button>
+                                <button class="button button--pan" onclick="window.open('','_blank')"><span>教務系統分流2</span></button>
+                                <button class="button button--pan" onclick="window.open('','_blank')"><span>教務系統分流3</span></button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="title first_title"><span class="year"></span>學年度第<span class="semester"></span>學期選課階段與時間</div>
