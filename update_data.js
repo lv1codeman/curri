@@ -19,6 +19,7 @@ $(function () {
   let ee_course_search = document.getElementById("ee_course_search");
   let ee_question = document.getElementById("ee_question");
   let ee_course_selection = document.getElementById("ee_course_selection");
+  let ee_course_add = document.getElementById("ee_course_add");
   let ee_withdraw_date = document.getElementById("ee_withdraw_date");
   let ee_modify = document.getElementById("ee_modify");
   let ee_modify_note1 = document.getElementById("ee_modify_note1");
@@ -26,6 +27,8 @@ $(function () {
   let ee_modify_note4 = document.getElementById("ee_modify_note4");
   let ee_questionNote = document.getElementById("ee_questionNote");
   let ee_functionName = document.querySelectorAll(".ee_functionName");
+  let ee_functionName2 = document.querySelectorAll(".ee_functionName2");
+  let ee_functionName3 = document.querySelectorAll(".ee_functionName3");
 
   $.ajax({
     //請求方式為get
@@ -62,14 +65,21 @@ $(function () {
       ee_functionName.forEach(function (item, i) {
         item.innerHTML = data["進院_功能編號"];
       });
+      ee_functionName2.forEach(function (item, i) {
+        item.innerHTML = data["進院_功能編號2"];
+      });
+      ee_functionName3.forEach(function (item, i) {
+        item.innerHTML = data["進院_功能編號3"];
+      });
 
-      ee_title.innerHTML = data["進院_標題暑期"];
-      //   ee_title.innerHTML = data["進院_標題下學期"];
+      // ee_title.innerHTML = data["進院_標題暑期"];
+      ee_title.innerHTML = data["進院_標題下學期"];
       ee_course_search.innerHTML = data["進院_課程查詢"];
       ee_question.innerHTML = data["進院_教學問卷"];
-      ee_questionNote.innerHTML = data["進院_教學意見反應問卷備註暑期"];
-      // ee_questionNote.innerHTML = data["進院_教學意見反應問卷備註下學期"];
+      // ee_questionNote.innerHTML = data["進院_教學意見反應問卷備註暑期"];
+      ee_questionNote.innerHTML = data["進院_教學意見反應問卷備註下學期"];
       ee_course_selection.innerHTML = data["進院_網路加退選"];
+      ee_course_add.innerHTML = data["進院_大學部課程加簽"];
       ee_withdraw_date.innerHTML = data["進院_期中停修申請"];
       ee_modify.innerHTML = data["進院_逾期選課更正"];
       ee_modify_note1.innerHTML = data["進院_逾期選課更正說明1"];
