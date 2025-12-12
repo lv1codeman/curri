@@ -58,7 +58,7 @@ $(function () {
       online_sign.innerHTML = data["線上加簽"];
       withdraw_date.innerHTML = data["期中停修"];
       course_selection_last_day.innerHTML = data["網路加退選最後一天"];
-      fresheng.innerHTML = data["大一英文上學期"];
+      fresheng.innerHTML = data["大一英文宣導"];
       // fresheng.innerHTML = data["大一英文下學期"];
 
       //進修學院
