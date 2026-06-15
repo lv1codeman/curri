@@ -72,14 +72,15 @@ $(function () {
         item.innerHTML = data["進院_功能編號3"];
       });
 
-      // ee_title.innerHTML = data["進院_標題暑期"];
-      ee_title.innerHTML = data["進院_標題下學期"];
+      ee_title.innerHTML = data["進院_標題暑期"];
+      // ee_title.innerHTML = data["進院_標題下學期"];
       ee_course_search.innerHTML = data["進院_課程查詢"];
       ee_question.innerHTML = data["進院_教學問卷"];
-      // ee_questionNote.innerHTML = data["進院_教學意見反應問卷備註暑期"];
-      ee_questionNote.innerHTML = data["進院_教學意見反應問卷備註下學期"];
+      ee_questionNote.innerHTML = data["進院_教學意見反應問卷備註暑期"];
+      // ee_questionNote.innerHTML = data["進院_教學意見反應問卷備註下學期"];
       ee_course_selection.innerHTML = data["進院_網路加退選"];
-      ee_course_add.innerHTML = data["進院_大學部課程加簽"];
+      //暑期無大學部課程加簽
+      // ee_course_add.innerHTML = data["進院_大學部課程加簽"];
       ee_withdraw_date.innerHTML = data["進院_期中停修申請"];
       ee_modify.innerHTML = data["進院_逾期選課更正"];
       ee_modify_note1.innerHTML = data["進院_逾期選課更正說明1"];
